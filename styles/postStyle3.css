@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 60px auto 60px;
+    grid-template-areas: "hd hd"
+                         "sd main"
+                         "ft ft";
+    grid-gap: 1em;
+}
+
+header {
+    background-color: #ff99cc;
+    grid-area: hd;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    color: #ffff00;
+    
+}
+
+aside {
+    background-color: #ff9966;
+    grid-area: sd;
+    /*display: flex;
+    flex-wrap: wrap;*/
+}
+
+main {
+    background-color: #87cefa;
+    grid-area: main;
+    /*display: flex;
+    flex-wrap: wrap;*/
+}
+
+footer {
+    background-color: #cccccc;
+    grid-area: ft;
+    padding-left: 10px; 
+}
+
+#mainblog {
+    padding: 1em;
+    margin-top: 0px;
+}
